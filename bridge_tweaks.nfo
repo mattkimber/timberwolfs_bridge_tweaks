@@ -1,19 +1,40 @@
 // Hand written.
 // (Info version 32)
 // Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
-0 * 4 11 00 00 00
-1 * 46 14 "C" "INFO" "B" "PALS" 01 00 "D" "B" "VRSN" 04 00 10 00 00 00 "B" "MINV" 04 00 0C 00 00 00 "B" "NPAR" 01 00 00 00 00
-2 * 79 08 08 "TWF" 0D "Timberwolf's Bridge Tweaks 1.0.0" 00 "Gameplay tweaks for the default bridges" 00
+0 * 4 13 00 00 00
+
+1 * 0   14 
+        "CINFO"         
+        "BNPAR" \w1 01
+        "BVRSN" \w4 \d1
+        "BPALS" \w1 "D"
+        "BVRSN" \w4 \d1
+        "BMINV" \w4 \d1
+        00 00 
+        
+2 * 0   14        
+        "CINFO"
+            "CPARAC" \d0
+            "BTYPE" \w1 1
+            "TNAME" 7F C3 9E "Use recoloured bridges" 00
+            "TDESC" 7F C3 9E "Add additional bridge types which may cause display problems when not using custom road and rail sets." 00
+            00 00
+        00 00
+
+3 * 79  08 08 
+    "TWF" 0D 
+    "Timberwolf's Bridge Tweaks 1.0.0" 00 
+    "Gameplay tweaks for the default bridges" 00
 
 // Action 0, Feature 06 (bridges), 3 props to change, 1 ID to change
-3 * 13  00 06 03 01 
+4 * 13  00 06 03 01 
         00       // ID 00 (wooden bridge)
         0C \w48  // max speed (0C) to 30 mph / 48kmh-ish
         0A \b6   // max length to 6 tiles
         13 \w100 // cost factor to 100 (original wooden bridge)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-4 * 18  00 06 04 01 
+5 * 18  00 06 04 01 
         01        // ID 01 (concrete bridge)
         0C \w72   // max speed (0C) in kmh-ish
         0A \b3    // max length (0A)
@@ -21,7 +42,7 @@
         0F \d1850 // long format year of availability (0F)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-5 * 18  00 06 04 01 
+6 * 18  00 06 04 01 
         02        // ID 02 (steel girder bridge)
         0C \w144  // max speed (0C) in kmh-ish
         0A \b4    // max length (0A)
@@ -29,7 +50,7 @@
         0F \d1875 // long format year of availability (0F)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-6 * 18  00 06 04 01 
+7 * 18  00 06 04 01 
         03        // ID 03 (suspension concrete)
         0C \w120  // max speed (0C) in kmh-ish
         0A \b12   // max length (0A)
@@ -37,7 +58,7 @@
         0F \d1800 // long format year of availability (0F)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-7 * 18  00 06 04 01 
+8 * 18  00 06 04 01 
         04        // ID 04 (suspension steel, bronze)
         0C \w160  // max speed (0C) in kmh-ish
         0A \b16   // max length (0A)
@@ -45,7 +66,7 @@
         0F \d1880 // long format year of availability (0F)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-8 * 18  00 06 04 01 
+9 * 18  00 06 04 01 
         05        // ID 05 (suspension steel, gold)
         0C \w0    // max speed (0C) in kmh-ish
         0A \b20   // max length (0A)
@@ -53,7 +74,7 @@
         0F \d1930 // long format year of availability (0F)
         
 // Action 0, Feature 06 (bridges), 5 props to change, 1 ID to change
-9 * 20  00 06 05 01 
+10 * 20  00 06 05 01 
         06        // ID 06 (cantilever, bronze)
         0C \w120  // max speed (0C) in kmh-
         09 \b2    // min length (09)
@@ -62,7 +83,7 @@
         0F \d1865 // long format year of availability (0F)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-10 * 18  00 06 04 01 
+11 * 18  00 06 04 01 
         07        // ID 07 (cantilever, brown)
         0C \w160  // max speed (0C) in kmh-ish
         0A \b12   // max length (0A)
@@ -70,7 +91,7 @@
         0F \d1885 // long format year of availability (0F)
         
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-11 * 18  00 06 04 01 
+12 * 18  00 06 04 01 
         08        // ID 08 (cantilever, red)
         0C \w0    // max speed (0C) in kmh-ish
         0A \b20   // max length (0A)
@@ -78,7 +99,7 @@
         0F \d1925 // long format year of availability (0F)
 
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-12 * 18  00 06 04 01 
+13 * 18  00 06 04 01 
         09        // ID 09 (box steel girder bridge)
         0C \w0    // max speed (0C) in kmh-ish
         0A \b3    // max length (0A)
@@ -86,7 +107,7 @@
         0F \d1925 // long format year of availability (0F)
         
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-13 * 18  00 06 04 01 
+14 * 18  00 06 04 01 
         0A        // ID 0A (tubular steel)
         0C \w0    // max speed (0C) in kmh-ish
         0A \b6    // max length (0A)
@@ -94,7 +115,7 @@
         0F \d1995 // long format year of availability (0F)
         
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-14 * 18  00 06 04 01 
+15 * 18  00 06 04 01 
         0B        // ID 0B (tubular steel, golden)
         0C \w0    // max speed (0C) in kmh-ish
         0A \b12    // max length (0A)
@@ -102,7 +123,7 @@
         0F \d2010 // long format year of availability (0F)
         
 // Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
-15 * 18  00 06 04 01 
+16 * 18  00 06 04 01 
         0C        // ID 0C (tubular steel, silicon)
         0C \w0    // max speed (0C) in kmh-ish
         0A \b16   // max length (0A)
@@ -113,12 +134,16 @@
 
 // Define text
 // Action 4, Feature 48 (custom strings), language FF (all), 1 string to change, DC01
-16 * 0	 04 48 FF 01 01 DC "Girder, Iron" 00
+17 * 0	 04 48 FF 01 01 DC "Girder, Iron" 00
+
+// Skip next sprite based on parameter
+// Action 7, variable 0, read 1 byte, test value is equal, value 00, skip 1 sprite
+18 * 0  07 00 01 02 00 01
 
 // Action 0, Feature 06 (bridges), 8 props to change, 1 ID to change
-17 * 0   00 06 08 01 
+19 * 0   00 06 08 01 
 
-        0D        // ID 0D (reserved)
+        0B        // ID 0D (replace tubular steel golden)
 
         0C \w80   // max speed (0C) in kmh-ish
         0A \b5    // max length (0A)
