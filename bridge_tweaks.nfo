@@ -1,0 +1,201 @@
+// Hand written.
+// (Info version 32)
+// Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
+0 * 4 11 00 00 00
+1 * 46 14 "C" "INFO" "B" "PALS" 01 00 "D" "B" "VRSN" 04 00 10 00 00 00 "B" "MINV" 04 00 0C 00 00 00 "B" "NPAR" 01 00 00 00 00
+2 * 79 08 08 "TWF" 0D "Timberwolf's Bridge Tweaks 1.0.0" 00 "Gameplay tweaks for the default bridges" 00
+
+// Action 0, Feature 06 (bridges), 3 props to change, 1 ID to change
+3 * 13  00 06 03 01 
+        00       // ID 00 (wooden bridge)
+        0C \w48  // max speed (0C) to 30 mph / 48kmh-ish
+        0A \b6   // max length to 6 tiles
+        13 \w100 // cost factor to 100 (original wooden bridge)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+4 * 18  00 06 04 01 
+        01        // ID 01 (concrete bridge)
+        0C \w72   // max speed (0C) in kmh-ish
+        0A \b3    // max length (0A)
+        13 \w200  // cost factor (13)
+        0F \d1850 // long format year of availability (0F)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+5 * 18  00 06 04 01 
+        02        // ID 02 (steel girder bridge)
+        0C \w144  // max speed (0C) in kmh-ish
+        0A \b4    // max length (0A)
+        13 \w700  // cost factor (13)
+        0F \d1875 // long format year of availability (0F)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+6 * 18  00 06 04 01 
+        03        // ID 03 (suspension concrete)
+        0C \w120  // max speed (0C) in kmh-ish
+        0A \b12   // max length (0A)
+        13 \w350  // cost factor (13)
+        0F \d1800 // long format year of availability (0F)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+7 * 18  00 06 04 01 
+        04        // ID 04 (suspension steel, bronze)
+        0C \w160  // max speed (0C) in kmh-ish
+        0A \b16   // max length (0A)
+        13 \w800  // cost factor (13)
+        0F \d1880 // long format year of availability (0F)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+8 * 18  00 06 04 01 
+        05        // ID 05 (suspension steel, gold)
+        0C \w0    // max speed (0C) in kmh-ish
+        0A \b20   // max length (0A)
+        13 \w1200 // cost factor (13)
+        0F \d1930 // long format year of availability (0F)
+        
+// Action 0, Feature 06 (bridges), 5 props to change, 1 ID to change
+9 * 20  00 06 05 01 
+        06        // ID 06 (cantilever, bronze)
+        0C \w120  // max speed (0C) in kmh-
+        09 \b2    // min length (09)
+        0A \b8    // max length (0A)
+        13 \w370  // cost factor (13)
+        0F \d1865 // long format year of availability (0F)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+10 * 18  00 06 04 01 
+        07        // ID 07 (cantilever, brown)
+        0C \w160  // max speed (0C) in kmh-ish
+        0A \b12   // max length (0A)
+        13 \w850  // cost factor (13)
+        0F \d1885 // long format year of availability (0F)
+        
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+11 * 18  00 06 04 01 
+        08        // ID 08 (cantilever, red)
+        0C \w0    // max speed (0C) in kmh-ish
+        0A \b20   // max length (0A)
+        13 \w1350 // cost factor (13)
+        0F \d1925 // long format year of availability (0F)
+
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+12 * 18  00 06 04 01 
+        09        // ID 09 (box steel girder bridge)
+        0C \w0    // max speed (0C) in kmh-ish
+        0A \b3    // max length (0A)
+        13 \w900  // cost factor (13)
+        0F \d1925 // long format year of availability (0F)
+        
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+13 * 18  00 06 04 01 
+        0A        // ID 0A (tubular steel)
+        0C \w0    // max speed (0C) in kmh-ish
+        0A \b6    // max length (0A)
+        13 \w800  // cost factor (13)
+        0F \d1995 // long format year of availability (0F)
+        
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+14 * 18  00 06 04 01 
+        0B        // ID 0B (tubular steel, golden)
+        0C \w0    // max speed (0C) in kmh-ish
+        0A \b12    // max length (0A)
+        13 \w600  // cost factor (13)
+        0F \d2010 // long format year of availability (0F)
+        
+// Action 0, Feature 06 (bridges), 4 props to change, 1 ID to change
+15 * 18  00 06 04 01 
+        0C        // ID 0C (tubular steel, silicon)
+        0C \w0    // max speed (0C) in kmh-ish
+        0A \b16   // max length (0A)
+        13 \w400  // cost factor (13)
+        0F \d2030 // long format year of availability (0F)
+
+// New bridges
+
+// Define text
+// Action 4, Feature 48 (custom strings), language FF (all), 1 string to change, DC01
+16 * 0	 04 48 FF 01 01 DC "Girder, Iron" 00
+
+// Action 0, Feature 06 (bridges), 8 props to change, 1 ID to change
+17 * 0   00 06 08 01 
+
+        0D        // ID 0D (reserved)
+
+        0C \w80   // max speed (0C) in kmh-ish
+        0A \b5    // max length (0A)
+        10 01 DC  // purchase text (10)
+        13 \w300  // cost factor (13)
+        14 25 0A 24 03 // menu icon (14)
+        0F \d1780 // long format year of availability (0F)
+    
+        0D 00 07  // Sprite layout (0D), tables
+        //table 00
+        C3 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //rail X: Back&Floor, Front, Pillars, 0
+        C4 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //rail Y: Back&Floor, Front, Pillars, 0
+        C5 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Road X: Back&Floor, Front, Pillars, 0
+        C6 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Road Y: Back&Floor, Front, Pillars, 0
+        E4 90 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mono X: Back&Floor, Front, Pillars, 0
+        E5 90 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mono Y: Back&Floor, Front, Pillars, 0
+        0C 91 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mlev X: Back&Floor, Front, Pillars, 0
+        0D 91 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mlev Y: Back&Floor, Front, Pillars, 0
+
+        //table 01
+        C3 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //rail X: Back&Floor, Front, Pillars, 0
+        C4 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //rail Y: Back&Floor, Front, Pillars, 0
+        C5 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Road X: Back&Floor, Front, Pillars, 0
+        C6 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Road Y: Back&Floor, Front, Pillars, 0
+        E4 90 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mono X: Back&Floor, Front, Pillars, 0
+        E5 90 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mono Y: Back&Floor, Front, Pillars, 0
+        0C 91 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mlev X: Back&Floor, Front, Pillars, 0
+        0D 91 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mlev Y: Back&Floor, Front, Pillars, 0
+
+        //table 02
+        C3 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //rail X: Back&Floor, Front, Pillars, 0
+        C4 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //rail Y: Back&Floor, Front, Pillars, 0
+        C5 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Road X: Back&Floor, Front, Pillars, 0
+        C6 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Road Y: Back&Floor, Front, Pillars, 0
+        E4 90 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mono X: Back&Floor, Front, Pillars, 0
+        E5 90 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mono Y: Back&Floor, Front, Pillars, 0
+        0C 91 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mlev X: Back&Floor, Front, Pillars, 0
+        0D 91 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mlev Y: Back&Floor, Front, Pillars, 0
+
+        //table 03
+        C3 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //rail X: Back&Floor, Front, Pillars, 0
+        C4 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //rail Y: Back&Floor, Front, Pillars, 0
+        C5 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Road X: Back&Floor, Front, Pillars, 0
+        C6 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Road Y: Back&Floor, Front, Pillars, 0
+        E4 90 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mono X: Back&Floor, Front, Pillars, 0
+        E5 90 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mono Y: Back&Floor, Front, Pillars, 0
+        0C 91 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mlev X: Back&Floor, Front, Pillars, 0
+        0D 91 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mlev Y: Back&Floor, Front, Pillars, 0
+
+        //table 04
+        C3 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //rail X: Back&Floor, Front, Pillars, 0
+        C4 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //rail Y: Back&Floor, Front, Pillars, 0
+        C5 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Road X: Back&Floor, Front, Pillars, 0
+        C6 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Road Y: Back&Floor, Front, Pillars, 0
+        E4 90 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mono X: Back&Floor, Front, Pillars, 0
+        E5 90 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mono Y: Back&Floor, Front, Pillars, 0
+        0C 91 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mlev X: Back&Floor, Front, Pillars, 0
+        0D 91 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mlev Y: Back&Floor, Front, Pillars, 0
+
+        //table 05
+        C3 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //rail X: Back&Floor, Front, Pillars, 0
+        C4 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //rail Y: Back&Floor, Front, Pillars, 0
+        C5 89 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Road X: Back&Floor, Front, Pillars, 0
+        C6 89 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Road Y: Back&Floor, Front, Pillars, 0
+        E4 90 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mono X: Back&Floor, Front, Pillars, 0
+        E5 90 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mono Y: Back&Floor, Front, Pillars, 0
+        0C 91 24 03  C7 89 24 03  C9 89 24 03  00 00 00 00 //Mlev X: Back&Floor, Front, Pillars, 0
+        0D 91 24 03  C8 89 24 03  CA 89 24 03  00 00 00 00 //Mlev Y: Back&Floor, Front, Pillars, 0
+
+        //table 06
+        86 89 24 03  88 89 24 03  85 89 24 03  87 89 24 03 //rail flat: northern end X, northern end Y, southern end X, southern end Y 
+        8A 89 24 03  8C 89 24 03  89 89 24 03  8B 89 24 03 //rail ramp: northern end X, northern end Y, southern end X, southern end Y 
+        8E 89 24 03  90 89 24 03  8D 89 24 03  8F 89 24 03 //road flat: northern end X, northern end Y, southern end X, southern end Y 
+        92 89 24 03  94 89 24 03  91 89 24 03  93 89 24 03 //road ramp: northern end X, northern end Y, southern end X, southern end Y 
+        E7 90 24 03  E9 90 24 03  E6 90 24 03  E8 90 24 03 //mono flat: northern end X, northern end Y, southern end X, southern end Y 
+        EB 90 24 03  ED 90 24 03  EA 90 24 03  EC 90 24 03 //mono ramp: northern end X, northern end Y, southern end X, southern end Y 
+        0F 91 24 03  11 91 24 03  0E 91 24 03  10 91 24 03 //mlev flat: northern end X, northern end Y, southern end X, southern end Y 
+        13 91 24 03  15 91 24 03  12 91 24 03  14 91 24 03 //mlev ramp: northern end X, northern end Y, southern end X, southern end Y
+
+
